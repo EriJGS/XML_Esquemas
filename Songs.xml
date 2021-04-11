@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- <!DOCTYPE playlist SYSTEM "Songs.dtd"> -->
+
+<playlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="Songs.xsd">
+    <cancion>
+        <duracion>4.47</duracion>
+        <anio>2008</anio>
+        <titulo>Give it 2 me</titulo>
+        <compositor>
+            <nombre>Pharrell</nombre>
+            <apellido>Williams</apellido>
+        </compositor>
+        <productor>
+            <nombre>Pharrell</nombre>
+            <apellido>Williams</apellido>
+        </productor>
+        <sello>Warner Bros, Records</sello>
+        <artista>Madonna</artista>
+    </cancion>
+    
+    <cancion>
+        <duracion>5.07</duracion>
+        <anio>2011</anio>
+        <titulo>Ode to Sleep</titulo>
+        <compositor>
+            <nombre>Tyler</nombre>
+            <apellido>Joseph</apellido>
+        </compositor>
+        <productor>
+            <nombre>Greg</nombre>
+            <apellido>Wells</apellido>
+        </productor>
+        <sello>Fueled by Ramen</sello>
+        <artista>Twenty One Pilots</artista>
+    </cancion>
+    
+    <cancion>
+        <duracion>5.55</duracion>
+        <anio>1975</anio>
+        <titulo>Bohemian Rhapsody</titulo>
+        <compositor>
+            <nombre>Freddie</nombre>
+            <apellido>Mercury</apellido>
+        </compositor>
+        <productor>
+            <nombre>Roy</nombre>
+            <apellido>Baker</apellido>
+        </productor>
+        <sello>EMI</sello>
+        <sello>Elektra Records</sello>
+        <sello>Parlophone</sello>
+        <sello>Hollywood Records</sello>
+        <artista>Queen</artista>
+    </cancion>
+    
+</playlist>

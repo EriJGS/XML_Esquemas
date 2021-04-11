@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--> 
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <!-- Elementos simples -->
+    <xs:element name="duracion" type="xs:string"/>
+    <xs:element name="anio" type="xs:integer"/>
+    <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="apellido" type="xs:string"/>
+    <xs:element name="sello" type="xs:string"/>
+    <xs:element name="artista" type="xs:string"/>
+    
+    <!-- Elementos complejos -->
+    <xs:element name="compositor">
+        <xs:complexType> 
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="apellido"/>                
+            </xs:sequence>            
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="productor">
+        <xs:complexType> 
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="apellido"/>                
+            </xs:sequence>            
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="cancion">
+        <xs:complexType> 
+            <xs:sequence>
+                <xs:element ref="duracion"/>
+                <xs:element ref="anio"/>   
+                <xs:element ref="titulo"/>
+                <xs:element ref="compositor"/> 
+                <xs:element ref="productor"/>
+                <xs:choice  minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="sello"/>      
+                </xs:choice>  
+                <xs:element ref="artista"/>          
+            </xs:sequence>            
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="playlist"> 
+        <xs:sequence>
+            <xs:element ref="cancion"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
