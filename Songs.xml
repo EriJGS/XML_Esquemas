@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <!-- <!DOCTYPE playlist SYSTEM "Songs.dtd"> -->
 
-<playlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="Songs.xsd">
+<playlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Songs.xsd">
     <cancion>
         <duracion>4.47</duracion>
         <anio>2008</anio>

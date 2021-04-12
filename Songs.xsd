@@ -52,11 +52,15 @@ and open the template in the editor.
             </xs:sequence>            
         </xs:complexType>
     </xs:element>
-
-    <xs:complexType name="playlist"> 
-        <xs:sequence>
-            <xs:element ref="cancion"/>
-        </xs:sequence>
-    </xs:complexType>
+    
+    <xs:element name="playlist">
+        <xs:complexType> 
+            <xs:sequence>
+                <xs:choice  minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="cancion"/>
+                </xs:choice>
+            </xs:sequence>            
+        </xs:complexType>
+    </xs:element>
     
 </xs:schema>
